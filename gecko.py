@@ -11,9 +11,9 @@ token = "" # API token from @botfather
 bot=telepot.Bot(token)
 default="https://www.ccmalaysia.com/wp-content/uploads/2018/04/DQmWJDVhm1dgKZHbk4K1Es6MzhF1tDHvgotxb9Fbkv3Y8tf-768x385.png" # Any default image link    
 
-exists=os.path.exists("coingecko.txt")
-if not exist:
-	f = open("coingecko.txt","w+")
+exists=os.path.exists("gecko.txt")
+if not exists:
+	f = open("gecko.txt","w+")
 	f.close()
 
 # Scrapping part   — coingecko
