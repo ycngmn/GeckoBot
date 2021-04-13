@@ -1,7 +1,7 @@
 # GeckoBot
 A python script built to scrap latest news from CoinGecko news and post them to a telegram channel without a delay... 
 
-# Pre Requirements
+## Pre Requirements
 
 The script won't just start working automatically. Here's some little nuisance before it start working :
 
@@ -11,7 +11,7 @@ The script won't just start working automatically. Here's some little nuisance b
 - Make some edit inside the code where needed..
 - Command `pip install -r requirements.txt`
 
-# Usage
+## Usage
 Now we are finally able to use that nasty bot.
 - Command `python gecko.py` in linux shell.
 
