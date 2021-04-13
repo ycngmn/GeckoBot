@@ -1,7 +1,7 @@
 # -*- coding: future_fstrings -*-
 import telepot
 import requests
-import time
+import time,os
 from bs4 import BeautifulSoup
 
 # bot vars
@@ -11,8 +11,12 @@ token = "" # API token from @botfather
 bot=telepot.Bot(token)
 default="https://www.ccmalaysia.com/wp-content/uploads/2018/04/DQmWJDVhm1dgKZHbk4K1Es6MzhF1tDHvgotxb9Fbkv3Y8tf-768x385.png" # Any default image link    
 
+exists=os.path.exists("coingecko.txt")
+if not exist:
+	f = open("coingecko.txt","w+")
+	f.close()
 
-# Scrapping part   — coingpart
+# Scrapping part   — coingecko
 while True:
 	res = requests.get('https://www.coingecko.com/en/news')
 	soup = BeautifulSoup(res.content, 'lxml')
