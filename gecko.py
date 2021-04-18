@@ -1,7 +1,7 @@
 import telepot,requests,time,os
 from bs4 import BeautifulSoup
 
-userid = "" #your telegram channel ID 
+user = "" #your telegram channel username 
 token = "" # API token from @botfather 
 
 bot=telepot.Bot(token)
@@ -36,9 +36,9 @@ while True: # Main Part
 			pass
 		else:
 			data.append(title)
-			try: # To ignore the Bad Request Error so the bot keeps running..
-			bot.sendPhoto(user,img,caption=text ,parse_mode='HTML')
+			try:  #ignores Bad Request Error...
+				bot.sendPhoto(user,img,caption=text ,parse_mode='HTML')
 			except:
 				pass
-			if len(data) == 12000: # Prevent data from gettig very big ;)
+			if len(data) == 12000: # Prevents data gettig too big ;)
 				data = data[:1000]
