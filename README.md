@@ -5,14 +5,14 @@ A python script built to scrap latest news from CoinGecko news and post them to 
 
 The script won't just start working automatically. Here's some little nuisance before it start working :
 
-- Get your Bot API token from [@BotFather](https://t.me/botfather)
-- Get your telegram Channel ID using [@chnlidbot](https://t.me/chnlidbot)
-- Make that bot admin in your telegram channel with posting right.
-- Make some edit inside the code where needed..
+- Get Bot API token from [@BotFather](https://t.me/botfather)
+- Get your telegram Channel Username
+- Make bot admin in your telegram channel with posting privilege 
+- Make some edit into the code ( line 4|5  ..
 - Command `pip install -r requirements.txt`
 
 ## Usage
-Now we are finally able to use that nasty bot.
-- Command `python gecko.py` in linux shell.
+
+- Command `python gecko.py` ... 
 
 🔥 **Boom !  Enjoy !**
