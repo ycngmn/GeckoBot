@@ -1,5 +1,4 @@
-# -*- coding: future_fstrings -*-
-import telepo,requests,time,os
+import telepot,requests,time,os
 from bs4 import BeautifulSoup
 
 userid = "" #your telegram channel ID 
